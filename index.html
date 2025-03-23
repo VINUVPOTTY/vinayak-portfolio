@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,29 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vinayak V Potty - Portfolio</title>
   <meta name="description" content="Vinayak V Potty - Data Analyst, Web Designer, Python & SQL Expert">
-  <meta name="keywords" content="Data Analyst, Python, SQL, Web Development, Power BI">
+  
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
+    
     body {
       font-family: 'Poppins', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: url('./fabio-oyXis2kALVg-unsplash.jpg') no-repeat center center/cover;
-      color: #333;
-      line-height: 1.6;
+      background: url('./data1.jpg') no-repeat center center/cover;
+      color: #ffffff;
       scroll-behavior: smooth;
     }
-
-    header {
-      color: #ada8a8;
-      text-align: center;
-      padding: 40px 0;
-      background: none;
-
-    }
-
-    header h1 { font-size: 2.8em; margin: 0; }
-    header p { font-size: 1.2em; }
 
     .profile-pic {
       width: 150px;
@@ -39,162 +28,127 @@
       object-fit: cover;
     }
 
-    nav {
-      display: flex;
-      justify-content: center;
-      background: #333;
-      padding: 10px 0;
-      position: fixed;
-      width: 100%;
-      top: 0;
-      z-index: 1000;
-    }
-
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      margin: 0 15px;
-      font-size: 1.1em;
-      transition: color 0.3s;
-    }
-
-    nav a:hover { color: #17A953; }
-
-    .container {
-      width: 90%;
-      max-width: 1200px;
-      margin: 80px auto 20px;
-      overflow: hidden;
-    }
-
-    .section {
-      background: rgba(255, 255, 255, 0.9);
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
     .section h2 {
-      color: #17A953;
-      border-bottom: 2px solid #17A953;
+      color: #fbfdfc;
+      border-bottom: 2px solid #ffffff;
       padding-bottom: 10px;
     }
 
-    ul {
-      list-style: none;
-      padding: 0;
+    .card {
+      transition: transform 0.3s;
+      cursor: pointer;
     }
 
-    ul li {
-      background: #f4f4f9;
-      margin: 10px 0;
-      padding: 15px;
-      border-radius: 5px;
-      border-left: 4px solid #17A953;
+    .card:hover {
+      transform: scale(1.05);
     }
-
-    .resume {
-      text-align: center;
-      margin-top: 20px;
-    }
-
-    .resume a {
-      display: inline-block;
-      padding: 10px 20px;
-      background: #17A953;
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 5px;
-      transition: background 0.3s;
-      margin-bottom: 20px;
-    }
-
-    .resumeHead{
-      color: white;
-    }
-    .resume a:hover {
-      background: #eff7f3;
-    }
-
-    footer {
-      background: #333;
-      color: #fff;
-      text-align: center;
-      padding: 15px 0;
-    }
-
-    footer p { margin: 0; }
   </style>
 </head>
 <body>
-  <header>
-    <img src="./vinayak.jpg" alt="Vinayak V Potty" class="profile-pic" loading="lazy">
+  <header class="text-center py-4">
+    <img src="./vinayak.jpg" alt="Vinayak V Potty" class="profile-pic">
     <h1>Vinayak V Potty</h1>
     <p>Data Analyst | Web Designer | Python & SQL Expert</p>
   </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#Education">Education</a>
-    <a href="#certifications">Certifications</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+     
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
   </nav>
 
-  <div class="container">
+  <div class="container mt-5 ">
+    <!-- About Section -->
     <section id="about" class="section">
-      <h2>About Me</h2>
-      <p>I am a Data Analyst specializing in Python, SQL, and data visualization, turning raw data into meaningful insights.
-With expertise in data cleaning, EDA, and statistical modeling, I use Python libraries like Pandas and Matplotlib, along with SQL, to process and analyze large datasets efficiently.
-
-I create interactive dashboards and reports using Matplotlib, Seaborn, and Plotly to present insights clearly.
-Passionate about problem-solving and automation, I streamline data workflows and support data-driven decision-making to enhance business performance.
-I have experience working with large datasets, optimizing queries, and improving data accuracy.
-By leveraging automation, I reduce manual effort and improve efficiency in data analysis tasks.
-I stay updated with the latest industry trends and continuously enhance my analytical skills.
-With a keen eye for detail, I ensure high-quality insights that drive business growth.</p>
+      <h2 class="text-center">About Me</h2>
+      <p class="text-center">
+        I am a Data Analyst specializing in Python, SQL, and data visualization, turning raw data into meaningful insights.
+        With expertise in data cleaning, EDA, and statistical modeling, I use Python libraries like Pandas and Matplotlib, along with SQL, to process and analyze 
+        large datasets efficiently. 
+        I create interactive dashboards and reports using Matplotlib, Seaborn, and Plotly to present insights clearly. 
+        Passionate about problem-solving and automation, I streamline data workflows and support data-driven decision-making to enhance business performance. 
+        I have experience working with large datasets, optimizing queries, and improving data accuracy. 
+        By leveraging automation,I reduce manual effort and improve efficiency in data analysis tasks.  
+        Stay updated with the latest industry trends and continuously enhance my analytical skills. 
+        With a keen eye for detail, I ensure high-quality insights that drive business growth.
+      </p>
     </section>
 
-   <section id="skills" class="section">  
-    <h2>Skills</h2>  
-    <ul>  
-        <li><strong>Programming & Scripting Languages:</strong> Python (Pandas, NumPy, Matplotlib, Seaborn), R, SQL (Joins, CTEs, Window Functions), SAS (for statistical analysis), VBA (for Excel automation)</li>  
-        <li><strong>Data Visualization:</strong> Tableau, Power BI, Google Data Studio, Matplotlib & Seaborn (Python), Excel (Charts, Pivot Tables)</li>  
-        <li><strong>Databases & Big Data:</strong> SQL Server, MySQL, PostgreSQL, MongoDB (NoSQL), Google BigQuery, Apache Hadoop & Spark</li>  
-        <li><strong>Data Manipulation & ETL Tools:</strong> SQL (Data Cleaning, Data Wrangling), Pandas (Python), Alteryx, Talend, Apache NiFi</li>  
-        <li><strong>Statistical Analysis & Machine Learning:</strong> Regression Analysis, Hypothesis Testing, A/B Testing, Predictive Modeling, Scikit-learn (Python), TensorFlow & PyTorch (for advanced ML)</li>  
-        <li><strong>Business Intelligence & Reporting:</strong> Microsoft Excel (Advanced Formulas, Power Query, Power Pivot), Looker, DAX (Power BI)</li>  
-        <li><strong>Cloud & Data Engineering:</strong> AWS (Redshift, S3, Athena), Google Cloud Platform, Microsoft Azure</li>  
-        <li><strong>Soft Skills:</strong>Leadership,Event Management,Writing,Public Speaking,Time Management,Problem-Solving,Critical Thinking,Adaptability</li>  
-    </ul>  
+    <section id="skills" class="section">
+  <h2 class="text-center">Skills</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 my-2 p-2">
+        <div class="card text-center p-3" onclick="openModal('Python', 'Python is a powerful programming language used for data analysis, automation, and web development.')">
+          <i class="fa-brands fa-python fa-xl my-3" style="font-size: 50px;"></i>
+          <h5 class="mt-2">Python</h5>
+        </div>
+      </div>
+
+      <div class="col-md-4 my-2 p-2">
+        <div class="card text-center p-3" onclick="openModal('SQL', 'SQL is used to manage and analyze structured data in databases efficiently.')">
+          <i class="fa-solid fa-database fa-2xl my-3" style="font-size: 50px;"></i>
+          <h5 class="mt-2">SQL</h5>
+        </div>
+      </div>
+
+      <div class="col-md-4 my-2 p-2">
+        <div class="card text-center p-3">
+          <i class="fa-solid fa-chart-simple fa-2xl my-3" style="font-size: 50px;"></i>
+          <h5 class="mt-2">Power BI</h5>
+        </div>
+      </div>
+
+      <div class="col-md-4 my-2 p-2">
+        <div class="card text-center p-3">
+          <i class="fa-brands fa-aws fa-2xl my-3" style="font-size: 50px;"></i>
+          <h5 class="mt-2">AWS</h5>
+        </div>
+      </div>
+
+      <div class="col-md-4 my-2 p-2">
+        <div class="card text-center p-3">
+          <i class="fa-solid fa-cogs fa-2xl my-3" style="font-size: 50px;"></i>
+          <h5 class="mt-2">ETL Tools</h5>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-    <section id="Education" class="section">
-      <h2>Education</h2>
+    <!-- Education Section -->
+    <section id="education" class="section">
+      <h2 class="text-center">Education</h2>
       <ul>
-        <li>PGDCA-IHRD Kollam</li>
-        <li>Bsc Electronics And Communication-M G University</li>
+        <li>PGDCA - IHRD Kollam</li>
+        <li>BSc Electronics - MG University</li>
       </ul>
     </section>
-    <section id="certifications" class="section">
-        <h2>Certifications</h2>
-        <ul>
-          <li>Generative AI for Beginners – Simplilearn SkillUp (March 2025)</li>
-          <li>Introduction to Data Analytics – Simplilearn SkillUp (March 2025)</li>
-          <li>Cybersecurity Assessment – LearnTube by CareerNinja (February 2025)</li>
-          <li>Big Data 101 – Cognitive Class (IBM) (February 2025)</li>
-          <li>Problem Solving (Intermediate) – HackerRank (January 2025)</li>
-          <li>SQL (Intermediate) – HackerRank (January 2025)</li>
-          <li>Python (Basic) – HackerRank (January 2025)</li>
-        </ul>
-        <p>View Certificates: <a href="https://drive.google.com/drive/folders/1-d1JVJ2kPrC0uRpx-iqaE560gA7xUb_B?usp=sharing" target="_blank">Click Here</a></p>
-      </section>
 
+    <!-- Certifications -->
+    <section id="certifications" class="section">
+      <h2 class="text-center">Certifications</h2>
+      <ul>
+        <li>Generative AI for Beginners – Simplilearn SkillUp (March 2025)</li>
+        <li>Introduction to Data Analytics – Simplilearn SkillUp (March 2025)</li>
+        <li>Big Data 101 – IBM (February 2025)</li>
+        <p>View Certificates: <a href="https://drive.google.com/drive/folders/1-d1JVJ2kPrC0uRpx-iqaE560gA7xUb_B?usp=sharing" target="_blank">Click Here</a></p>
+      </ul>
+    </section>
+
+    <!-- Projects -->
     <section id="projects" class="section">
-      <h2>Projects</h2>
+      <h2 class="text-center">Projects</h2>
       <div class="projects">
         <div class="project-card">
           <h3>Data Analysis Dashboard</h3>
@@ -204,26 +158,61 @@ With a keen eye for detail, I ensure high-quality insights that drive business g
       </div>
     </section>
 
-    <section class="resume">
-      <h2 class="resumeHead">Resume</h2>
-      <a href="./cv vinu new.pdf" target="_blank">Download My Resume</a>
+    <!-- Resume -->
+    <section class="resume text-center mt-4">
+      <h2>Resume</h2>
+      <a href="./cv vinu new.pdf" target="_blank" class="btn btn-success">Download My Resume</a>
     </section>
 
-    <section id="contact" class="section">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:ypotty.vinayak@gmail.com">vpotty.vinayak@gmail.com</a></p>
-      <p>Phone: <a href="tel:+918907268459">+91-8907268459</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/vinayak-potty" target="_blank">Vinayak V Potty</a></p>
-      <p>GitHub: <a href="https://github.com/vinuvpotty" target="_blank">vinayakvpotty</a></p>
+    <!-- Contact Section -->
+    <section id="contact" class="container mt-5">
+      <section id="contact" class="section text-center">
+        <h2>Contact</h2>
+        <p>
+          <i class="fa-solid fa-envelope"></i>  
+          Email: <a href="mailto:vpotty.vinayak@gmail.com">vpotty.vinayak@gmail.com</a>
+        </p>
+        <p>
+          <i class="fa-solid fa-phone"></i>  
+          Phone: <a href="tel:+918907268459">+91-8907268459</a>
+        </p>
+        <p>
+          <i class="fa-brands fa-linkedin"></i>  
+          LinkedIn: <a href="https://www.linkedin.com/in/vinayak-potty" target="_blank">Vinayak V Potty</a>
+        </p>
+      </section>
+      
     </section>
   </div>
 
-  <footer>
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3 mt-5">
     <p>&copy; <span id="year"></span> Vinayak V Potty. All rights reserved.</p>
   </footer>
 
+  <!-- Bootstrap Modal -->
+  <div class="modal fade" id="skillModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTitle"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body" id="modalContent"></div>
+      </div>
+    </div>
+  </div>
+
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+    function openModal(title, content) {
+  document.getElementById("modalTitle").textContent = title;
+  document.getElementById("modalContent").textContent = content;
+  var myModal = new bootstrap.Modal(document.getElementById('skillModal'));
+  myModal.show();
+  
+}
+
   </script>
 </body>
 </html>
