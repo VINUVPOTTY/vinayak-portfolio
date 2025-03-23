@@ -53,9 +53,14 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container">
-     
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
+      
+      <!-- Navbar Toggler (for mobile view) -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav text-center">
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
           <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
@@ -66,11 +71,17 @@
       </div>
     </div>
   </nav>
+  
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   <div class="container mt-5 ">
     <!-- About Section -->
     <section id="about" class="section">
-      <h2 class="text-center">About Me</h2>
+      <h2 class="text-right">
+        <i class="fa-solid fa-user"></i> About Me</h2>
       <p class="text-center">
         I am a Data Analyst specializing in Python, SQL, and data visualization, turning raw data into meaningful insights.
         With expertise in data cleaning, EDA, and statistical modeling, I use Python libraries like Pandas and Matplotlib, along with SQL, to process and analyze 
@@ -84,199 +95,229 @@
       </p>
     </section>
 
-    <section id="skills" class="section">
-  <h2 class="text-center">Skills</h2>
+    <!-- Skills Section -->
+<section id="skills" class="section">
+  <h2 class="text-">
+    <i class="fa-solid fa-tools"></i> Skills
+  </h2>
   <div class="container">
-    <div class="row">
-      <div class="row">
-  
-        <div class="row">
+    <div class="row justify-content-center text-center">
 
-           <!-- Python -->
-  <div class="col-md-4 my-2 p-2">
-    <div class="card text-center p-3">
-      <i class="fa-brands fa-python fa-2xl my-3" style="font-size: 50px; color: #FFD43B;"></i>
-      <h5 class="mt-2">Python</h5>
-    </div>
-  </div>
-
-  <!-- SQL -->
-  <div class="col-md-4 my-2 p-2">
-    <div class="card text-center p-3">
-      <i class="fa-solid fa-database fa-2xl my-3" style="font-size: 50px; color: #00758F;"></i>
-      <h5 class="mt-2">SQL</h5>
-    </div>
-  </div>
-
-  <!-- Scikit-Learn -->
-  <div class="col-md-4 my-2 p-2">
-    <div class="card text-center p-3">
-      <i class="fa-solid fa-robot fa-2xl my-3" style="font-size: 50px; color: #F7931E;"></i>
-      <h5 class="mt-2">Scikit-Learn</h5>
-    </div>
-  </div>
-
+          <!-- Python -->
+          <div class="col-md-3 my-2 mx-2 p-2">
+            <div class="card text-center p-3">
+              <i class="fa-brands fa-python fa-2xl my-3" style="font-size: 50px; color: #FFD43B;"></i>
+              <h5 class="mt-2">Python</h5>
+            </div>
+          </div>
+    
+          <!-- SQL -->
+          <div class="col-md-3 my-2 mx-2 p-2">
+            <div class="card text-center p-3">
+              <i class="fa-solid fa-database fa-2xl my-3" style="font-size: 50px; color: #00758F;"></i>
+              <h5 class="mt-2">SQL</h5>
+            </div>
+          </div>
+    
+          <!-- Scikit-Learn -->
+          <div class="col-md-3 my-2 mx-2 p-2">
+            <div class="card text-center p-3">
+              <i class="fa-solid fa-robot fa-2xl my-3" style="font-size: 50px; color: #F7931E;"></i>
+              <h5 class="mt-2">Scikit-Learn</h5>
+            </div>
+          </div>
+    
           <!-- Machine Learning -->
-          <div class="col-md-4 my-2 p-2">
+          <div class="col-md-3 my-2 mx-2 p-2">
             <div class="card text-center p-3">
               <i class="fa-solid fa-brain fa-2xl my-3" style="font-size: 50px; color: purple;"></i>
               <h5 class="mt-2">Machine Learning</h5>
             </div>
           </div>
-        
-         <!-- Pandas -->
-  <div class="col-md-4 my-2 p-2">
-    <div class="card text-center p-3">
-      <i class="fa-solid fa-table fa-2xl my-3" style="font-size: 50px; color: #150458;"></i>
-      <h5 class="mt-2">Pandas</h5>
-    </div>
-  </div>
+    
+          <!-- Pandas -->
+          <div class="col-md-3 my-2 mx-2 p-2">
+            <div class="card text-center p-3">
+              <i class="fa-solid fa-table fa-2xl my-3" style="font-size: 50px; color: #150458;"></i>
+              <h5 class="mt-2">Pandas</h5>
+            </div>
+          </div>
+    
           <!-- NumPy -->
-          <div class="col-md-4 my-2 p-2">
+          <div class="col-md-3 my-2 mx-2 p-2">
             <div class="card text-center p-3">
               <i class="fa-solid fa-square-root-variable fa-2xl my-3" style="font-size: 50px;"></i>
               <h5 class="mt-2">NumPy</h5>
             </div>
           </div>
-        
+    
           <!-- Power BI -->
-          <div class="col-md-4 my-2 p-2">
+          <div class="col-md-3 my-2 mx-2 p-2">
             <div class="card text-center p-3">
               <i class="fa-solid fa-chart-pie fa-2xl my-3" style="font-size: 50px; color: darkblue;"></i>
               <h5 class="mt-2">Power BI</h5>
             </div>
           </div>
-        
+    
           <!-- Tableau -->
-          <div class="col-md-4 my-2 p-2">
+          <div class="col-md-3 my-2 mx-2 p-2">
             <div class="card text-center p-3">
               <i class="fa-solid fa-table-columns fa-2xl my-3" style="font-size: 50px; color: #e97627;"></i>
               <h5 class="mt-2">Tableau</h5>
             </div>
           </div>
-        
+    
           <!-- AWS -->
-          <div class="col-md-4 my-2 p-2">
+          <div class="col-md-3 my-2 mx-2 p-2">
             <div class="card text-center p-3">
               <i class="fa-brands fa-aws fa-2xl my-3" style="font-size: 50px; color: #ff9900;"></i>
               <h5 class="mt-2">AWS</h5>
             </div>
           </div>
-        
+    
           <!-- Google Cloud (GCP) -->
-          <div class="col-md-4 my-2 p-2">
+          <div class="col-md-3 my-2 mx-2 p-2">
             <div class="card text-center p-3">
               <i class="fa-brands fa-google fa-2xl my-3" style="font-size: 50px; color: #4285F4;"></i>
               <h5 class="mt-2">Google Cloud (GCP)</h5>
             </div>
           </div>
-        
+    
           <!-- Microsoft Azure -->
-          <div class="col-md-4 my-2 p-2">
+          <div class="col-md-3 my-2 mx-2 p-2">
             <div class="card text-center p-3">
               <i class="fa-brands fa-microsoft fa-2xl my-3" style="font-size: 50px; color: #0078D4;"></i>
               <h5 class="mt-2">Microsoft Azure</h5>
             </div>
           </div>
-        
+    
           <!-- Excel -->
-          <div class="col-md-4 my-2 p-2">
+          <div class="col-md-3 my-2 mx-2 p-2">
             <div class="card text-center p-3">
               <i class="fa-solid fa-file-excel fa-2xl my-3" style="font-size: 50px; color: green;"></i>
               <h5 class="mt-2">Excel</h5>
             </div>
           </div>
-        
+    
           <!-- PyTorch -->
-          <div class="col-md-4 my-2 p-2">
+          <div class="col-md-3 my-2 mx-2 p-2">
             <div class="card text-center p-3">
               <i class="fa-solid fa-fire fa-2xl my-3" style="font-size: 50px; color: red;"></i>
               <h5 class="mt-2">PyTorch</h5>
             </div>
           </div>
-        
+    
           <!-- Deep Learning -->
-          <div class="col-md-4 my-2 p-2">
+          <div class="col-md-3 my-2 mx-2 p-2">
             <div class="card text-center p-3">
               <i class="fa-solid fa-microchip fa-2xl my-3" style="font-size: 50px; color: orange;"></i>
               <h5 class="mt-2">Deep Learning</h5>
             </div>
           </div>
-        
+    
           <!-- R Programming -->
-          <div class="col-md-4 my-2 p-2">
+          <div class="col-md-3 my-2 mx-2 p-2">
             <div class="card text-center p-3">
               <i class="fa-solid fa-r fa-2xl my-3" style="font-size: 50px;"></i>
               <h5 class="mt-2">R</h5>
             </div>
           </div>
-        
+    
           <!-- C++ -->
-          <div class="col-md-4 my-2 p-2">
+          <div class="col-md-3 my-2 mx-2 p-2">
             <div class="card text-center p-3">
               <i class="fa-solid fa-code fa-2xl my-3" style="font-size: 50px;"></i>
               <h5 class="mt-2">C++</h5>
             </div>
           </div>
-        
-        </div>
-        
-      
-      
-    <!-- Education Section -->
-    <section id="education" class="section">
-      <h2 class="text-center">Education</h2>
-      <ul>
-        <li>PGDCA - IHRD Kollam</li>
-        <li>BSc Electronics - MG University</li>
-      </ul>
-    </section>
-
-    <!-- Certifications -->
-    <section id="certifications" class="section">
-      <h2 class="text-center">Certifications</h2>
-      <ul>
-        <li>Generative AI for Beginners – Simplilearn SkillUp (March 2025)</li>
-        <li>Introduction to Data Analytics – Simplilearn SkillUp (March 2025)</li>
-        <li>Big Data 101 – IBM (February 2025)</li>
-        <p>View Certificates: <a href="https://drive.google.com/drive/folders/1-d1JVJ2kPrC0uRpx-iqaE560gA7xUb_B?usp=sharing" target="_blank">Click Here</a></p>
-      </ul>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects" class="section">
-      <h2 class="text-center">Projects</h2>
-      <div class="projects">
-        <div class="project-card">
-          <h3>Data Analysis Dashboard</h3>
-          <p>Built an interactive Power BI dashboard for sales insights.</p>
-          <a href="https://github.com/vinuvpotty/project-link" target="_blank">View on GitHub</a>
+    
         </div>
       </div>
     </section>
+    
+    <!-- Education Section -->
+<section id="education" class="section">
+  <h2 class="text-right"><i class="fa-solid fa-user-graduate"></i> Education</h2>
+  <ul class="list-unstyled">
+    <li>
+      <i class="fa-solid fa-graduation-cap" style="color: #007BFF;"></i> 
+      PGDCA - IHRD Kollam
+    </li>
+    <li>
+      <i class="fa-solid fa-graduation-cap" style="color: #007BFF;"></i> 
+      BSc Electronics - MG University
+    </li>
+  </ul>
+</section>
+
+
+    <!-- Certifications -->
+<section id="certifications" class="section">
+  <h2 class="text-right">
+    <i class="fa-solid fa-medal"></i> Certifications
+  </h2>
+  <ul class="list-unstyled">
+    <li><i class="fa-solid fa-certificate"></i> Generative AI for Beginners – Simplilearn SkillUp (March 2025)</li>
+    <li><i class="fa-solid fa-certificate"></i> Introduction to Data Analytics – Simplilearn SkillUp (March 2025)</li>
+    <li><i class="fa-solid fa-certificate"></i> Big Data 101 – IBM (February 2025)</li>
+  </ul>
+  <p class="text-center">
+    <i class="fa-solid fa-link"></i> View Certificates: 
+    <a href="https://drive.google.com/drive/folders/1-d1JVJ2kPrC0uRpx-iqaE560gA7xUb_B?usp=sharing" target="_blank">Click Here</a>
+  </p>
+</section>
+    <!-- Projects -->
+    <section id="projects" class="section">
+  <h2 class="text-right">
+    <i class="fa-solid fa-laptop-code" style="color: #0d6efd;"></i> Projects
+  </h2>
+  <div class="projects text-center">
+    <div class="project-card border p-3 shadow rounded">
+      <h3>
+        <i class="fa-solid fa-chart-line" style="color: #ff9900;"></i> Data Analysis Dashboard
+      </h3>
+      <p>Built an interactive Power BI dashboard for sales insights.</p>
+      <a href="https://github.com/vinuvpotty/project-link" target="_blank">
+        <i class="fa-brands fa-github" style="color: black;"></i> View on GitHub
+      </a>
+    </div>
+  </div>
+</section>
+
 
     <!-- Resume -->
-    <section class="resume text-center mt-4">
-      <h2>Resume</h2>
-      <a href="./cv vinu new.pdf" target="_blank" class="btn btn-success">Download My Resume</a>
-    </section>
+<section class="resume text-center mt-4">
+  <h2><i class="fa-solid fa-file-alt"></i> Resume</h2>
+  <a href="./cv vinu new.pdf" target="_blank" class="btn btn-success">
+    <i class="fa-solid fa-download"></i> Download My Resume
+  </a>
+</section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="container mt-5">
-      <section id="contact" class="section text-center">
-        <h2>Contact</h2>
-        <p>
-          <i class="fa-solid fa-envelope"></i>  
-          Email: <a href="mailto:vpotty.vinayak@gmail.com">vpotty.vinayak@gmail.com</a>
-        </p>
-        <p>
-          <i class="fa-solid fa-phone"></i>  
-          Phone: <a href="tel:+918907268459">+91-8907268459</a>
-        </p>
-        <p>
-          <i class="fa-brands fa-linkedin"></i>  
-          LinkedIn: <a href="https://www.linkedin.com/in/vinayak-potty" target="_blank">Vinayak V Potty</a>
-        </p>
+   <!-- Contact Section -->
+<section id="contact" class="container mt-5">
+  <section id="contact" class="section text-right">
+    <h2><i class="fa-solid fa-envelope"></i> Contact</h2>
+  </section>
+</section>
+
+<div class="text-center mt-4">
+  <p>
+    <i class="fa-solid fa-envelope" style="color: #D44638; font-size: 24px;"></i>  
+    <strong>Email:</strong> 
+    <a href="mailto:vpotty.vinayak@gmail.com">vpotty.vinayak@gmail.com</a>
+  </p>
+  <p>
+    <i class="fa-solid fa-phone" style="color: #34A853; font-size: 24px;"></i>  
+    <strong>Phone:</strong> 
+    <a href="tel:+918907268459">+91-8907268459</a>
+  </p>
+  <p>
+    <i class="fa-brands fa-linkedin" style="color: #0077B5; font-size: 24px;"></i>  
+    <strong>LinkedIn:</strong> 
+    <a href="https://www.linkedin.com/in/vinayak-potty" target="_blank">Vinayak V Potty</a>
+  </p>
+</div>
+
       </section>
       
     </section>
