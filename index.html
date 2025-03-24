@@ -96,7 +96,7 @@
     </section>
 
     <!-- Skills Section -->
-<section id="skills" class="section">
+<section id="skills" class="section mt-5">
   <h2 class="text-">
     <i class="fa-solid fa-tools"></i> Skills
   </h2>
@@ -236,7 +236,7 @@
     </section>
     
     <!-- Education Section -->
-<section id="education" class="section">
+<section id="education" class="section mt-5">
   <h2 class="text-right"><i class="fa-solid fa-user-graduate"></i> Education</h2>
   <ul class="list-unstyled">
     <li>
@@ -252,7 +252,7 @@
 
 
     <!-- Certifications -->
-<section id="certifications" class="section">
+<section id="certifications" class="section mt-5">
   <h2 class="text-right">
     <i class="fa-solid fa-medal"></i> Certifications
   </h2>
@@ -293,40 +293,41 @@
   </a>
 </section>
 
-   <!-- Contact Section -->
-<section id="contact" class="container mt-5">
-  <section id="contact" class="section text-right">
-    <h2><i class="fa-solid fa-envelope"></i> Contact</h2>
-  </section>
+
+<section id="contact" class="container mt-5 text-right">
+  <h2><i class="fa-solid fa-envelope"></i> Contact</h2>
+  <hr style="border: 2px solid #ffffff; width: 100%; margin-left: 0;">
 </section>
 
 <div class="text-center mt-4">
   <p>
-    <i class="fa-solid fa-envelope" style="color: #D44638; font-size: 24px;"></i>  
-    <strong>Email:</strong> 
-    <a href="mailto:vpotty.vinayak@gmail.com">vpotty.vinayak@gmail.com</a>
-  </p>
-  <p>
-    <i class="fa-solid fa-phone" style="color: #34A853; font-size: 24px;"></i>  
-    <strong>Phone:</strong> 
-    <a href="tel:+918907268459">+91-8907268459</a>
-  </p>
-  <p>
-    <i class="fa-brands fa-linkedin" style="color: #0077B5; font-size: 24px;"></i>  
-    <strong>LinkedIn:</strong> 
-    <a href="https://www.linkedin.com/in/vinayak-potty" target="_blank">Vinayak V Potty</a>
+    <a href="mailto:vpotty.vinayak@gmail.com" style="margin: 0 15px;">
+      <i class="fa-solid fa-envelope" style="color: #f3e8e7; font-size: 40px;"></i>
+    </a>
+    
+    <a href="tel:+918907268459" style="margin: 0 15px;">
+      <i class="fa-solid fa-phone" style="color: #e0ece4; font-size: 40px;"></i>
+    </a>
+    
+    <a href="https://www.linkedin.com/in/vinayak-potty" target="_blank" style="margin: 0 15px;">
+      <i class="fa-brands fa-linkedin" style="color: #feffff; font-size: 40px;"></i>
+    </a>
+    
+    <a href="https://github.com/VINUVPOTTY" target="_blank" style="margin: 0 15px;">
+      <i class="fab fa-github" style="font-size: 40px;"></i>
+    </a>
   </p>
 </div>
+</section>
 
-      </section>
-      
-    </section>
-  </div>
+<!-- Footer -->
+<footer class="text-white text-center py-3 mt-5">
+  <p>&copy; <span id="year"></span> Vinayak V Potty. All rights reserved.</p>
+</footer>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-3 mt-5">
-    <p>&copy; <span id="year"></span> Vinayak V Potty. All rights reserved.</p>
-  </footer>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
   <!-- Bootstrap Modal -->
   <div class="modal fade" id="skillModal" tabindex="-1">
